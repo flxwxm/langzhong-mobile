@@ -1,0 +1,79 @@
+/*reset*/
+html{font-size: 625%;}
+body,ul,h1,form,input,p,figure,h2,h3,h4{margin:0; padding:0;}
+body{font-family: "微软雅黑";font-size: .16rem}
+li{list-style: none;}
+a{text-decoration:none;}
+img{border:none;vertical-align: top; display: block; max-width: 100%;}
+
+.clear:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+.clear{
+	zomm:1;
+}
+/*header*/
+
+#header{
+	width: 100%; 
+	height:.4rem;
+	line-height: .4rem;
+	margin:0 auto; 
+	border-bottom:.04rem solid #D2D1D1;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 200;
+}
+header .nav-list{ 
+	position: fixed;
+	width: 100%;
+	height:.4rem;
+	top: 0;
+	left: 0;
+	background: #fff;
+}  
+#header li{
+	width: 20%;
+	float:left; 
+	text-align: center;
+}
+#header li a{
+	display: block;
+	height: .4rem;
+	width: 100%;
+	font-size: .16rem;
+	line-height: .4rem; 
+	color:#000;
+	opacity: 0.5;
+	transition: opacity 500ms,transform 500ms;
+	-webkit-transition: opacity 500ms,-webkit-transform 500ms;
+
+}
+#header li .active{
+	color:#F05F04; 
+	font-weight:bold; 
+	opacity: 1;
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+}
+
+
+/* footer */
+
+#footer{
+	width: 100%;
+	text-align: center;
+}
+#footer div{
+	line-height: .3rem;
+	background: #B3B3B3;
+	color: #fff;
+	font-size: .14rem;
+	letter-spacing: .02rem;
+}
+#footer p{
+	font-size: .12rem;
+}

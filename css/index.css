@@ -1,0 +1,140 @@
+
+
+/* banner */
+#banner{
+	max-width:6.4rem; 
+	margin: 0 auto;
+	position: relative;
+}
+#banner .img{
+	display: -webkit-flex;
+	display: flex;
+	overflow: hidden;
+}
+#banner .img li{
+	flex-shrink: 0;
+	width: 100%;	
+}
+#banner .tab{
+	position: absolute; 
+	bottom:.04rem;
+	left: 50%; 
+	transform: translate(-50%,0);
+	height: .1rem;
+	
+}
+#banner .tab li{
+	float:left; 
+	background:url(../img/banner/tab.png) no-repeat; 
+	width:.1rem; 
+	height: .1rem;
+	padding:.02rem;
+}
+#banner .tab .active{
+	background:url(../img/banner/tab.png) no-repeat -.17rem 0;
+}
+
+/* search */
+#search-box{
+	max-width: 6.4rem;
+	position: relative;
+	margin: 0 auto;
+	height:.3rem;
+	background: #B9B9B9;
+	padding: .02rem 0;
+}
+#search-box .search{
+	box-sizing: border-box;
+ 	display: block;
+	border:.02rem solid #ff8608;
+	width:98%;
+	height:.3rem; 
+	border-radius:.08rem;
+	margin: 0 auto;
+	outline: none;
+	font-size: .14rem;
+} 
+
+
+#search-box .btn{
+	width:.45rem; 
+	height:.26rem;
+	border:none;
+	background: url(../img/search.jpg) no-repeat; 
+	position: absolute; 
+	bottom:.04rem; 
+	right:1%;
+	border-top-right-radius:.08rem;
+	border-bottom-right-radius:.08rem;
+}
+
+
+
+/* tour and food */
+#tour,#food {
+	position: relative;
+	max-width: 6.4rem;
+	margin: 0 auto;
+}
+#tour h2,#food h2{
+	max-width:6.4rem; 
+	line-height: .3rem;
+	font-size: .14rem;
+	font-weight: normal;
+	padding-left: 2%;
+	padding-bottom: .02rem;
+}
+#tour a,#food a{
+	position: absolute;
+	top: .02rem;
+	right: 2%;
+}
+#tour .box,#food .box{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+#tour figure,#food figure{
+	box-sizing: border-box;
+	width: 46%;
+	margin: 0 0 .1rem 0;
+	box-shadow: 0 0 .02rem #808080;
+}
+#tour figcaption,#food figcaption{
+	padding: .04rem .04rem 0;
+}
+#tour figcaption p,#food figcaption p{
+	display: -webkit-box !important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-all;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;	
+}
+#tour figure span{
+	color:#F05F04;
+	line-height: .24rem;
+}
+#tour figure strong{
+	font-size: .16rem;
+}
+#food figcaption{
+	color: #F05F04;
+}
+#food figcaption p{
+	color: #000;
+}
+/* 媒体查询 */
+@media (min-device-width: 480px){
+	#tour figure,#food figure{
+		font-size: .14rem;
+	}
+
+}
+@media (max-device-width: 480px){
+	#tour figure,#food figure{
+		font-size: .12rem;
+	}
+
+}

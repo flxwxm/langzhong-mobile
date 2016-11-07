@@ -1,0 +1,123 @@
+/* banner */
+#banner{
+	max-width:6.4rem; 
+	margin: 0 auto;
+	position: relative;
+}
+#banner .img{
+	display: -webkit-flex;
+	display: flex;
+	overflow: hidden;
+}
+#banner .img li{
+	flex-shrink: 0;
+	width: 100%;	
+}
+#banner .tab{
+	position: absolute; 
+	bottom:.04rem;
+	left: 50%; 
+	transform: translate(-50%,0);
+	height: .1rem;
+	
+}
+#banner .tab li{
+	float:left; 
+	background:url(../img/banner/tab.png) no-repeat; 
+	width:.1rem; 
+	height: .1rem;
+	padding:.02rem;
+}
+#banner .tab .active{
+	background:url(../img/banner/tab.png) no-repeat -.17rem 0;
+}
+
+/* content */
+#content{
+	max-width: 6.4rem;
+	margin: 0 auto;
+}
+#content .same h2{
+	font-size: .16rem;
+	font-weight: normal;
+	line-height: .24rem;
+}
+#content .list-same{
+	box-sizing: border-box;
+	margin-bottom: .05rem;
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid #9C9C9C;
+	padding-bottom: .05rem;
+}
+
+#content .nat-list img{
+	width: 40%;
+}
+#content .nat-list figcaption{
+	position: absolute;
+	width: 56%;
+	bottom: 0;
+	right: 2%;
+	padding-bottom: .1rem;
+	line-height: .24rem;
+}
+#content .list-same p{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box !important;
+	word-break: break-all;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+#nature .nat-list span{
+	color: #FF6F1C;
+	font-size: 12px;
+}
+#nature .nat-list em{
+	color: #898989;
+	padding-left: .4rem;
+	font-style: normal;
+}
+#nature .nat-list strong{
+	font-size: 16px;
+}
+
+#strategy .str-list{
+	position: relative;
+	text-align: center;
+	color: #fff;
+} 
+
+#strategy .str-list h3{
+	font-size: .24rem;
+	line-height: .32rem;
+
+}
+#strategy .str-list figcaption{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+/* 媒体查询 */
+@media (min-device-width: 480px){
+	#tour figure,#food figure,#content .list-same{
+		font-size: .14rem;
+	}
+	#content .list-same p{
+		line-height: .28rem;
+	}
+
+}
+@media (max-device-width: 480px){
+	#tour figure,#food figure,#content .list-same{
+		font-size: .12rem;
+	}
+	#content .list-same p{
+		line-height: .24rem;
+	}
+
+}
